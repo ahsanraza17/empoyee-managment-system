@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  color: white;
+}
+
+body{
+  background-color: #111;
+}
+
+::-webkit-scrollbar{
+  width: 3px;
+  background-color: #111;
+}
+
+::-webkit-scrollbar-thumb{
+  width: full;
+  background: white;
+}
+
+#tasklist-container::-webkit-scrollbar{
+  display: none;
+}
+
+.pop-up {
+  animation: popUp 0.6s ease-out;
+}
+
+.pop-up {
+  animation: popUp 0.3s ease-out;
+  /* Ensure the transform here only focuses on scale, opacity, etc. */
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
